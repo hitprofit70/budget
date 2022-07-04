@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>budget tracker</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <div class="form-list">
+    <form>
+        <div class="form-list">
         <input type="name" class="control-A" id="type" placeholder="Type an item">
         <input type="number" class="control-B" id="amount" placeholder="Amount">
     </div>
@@ -16,6 +19,41 @@
     <div class="button">
         <button>Add Expense</button>
     </div>
+</form>
+
+<div class="transcation">
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Items</th>
+            <th scope="col">Type</th>
+            <th scope="col">Amount</th>
+          </tr>
+        </thead>
+        <tbody class="table-group">
+          <tr>
+            <th scope="row">1</th>
+            <td>Salary</td>
+            <td>Income</td>
+            <td>R7 000</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Bus fare</td>
+            <td>Expense</td>
+            <td>R500</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Foods</td>
+            <td>Expense</td>
+            <td>R1 000</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+    
 </body>
 <script src="./index.js"></script>
 </html>
