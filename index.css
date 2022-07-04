@@ -1,10 +1,22 @@
 body {
-    margin: 0px;
-    padding: 0px;
     background: gainsboro;
 }
 
-label {
-    width: 300px;
-    height: 100px;
+.control-A {
+    width: 250px;
+    height: 25px;
+    margin-left: 10px;
+}
+
+.control-B{
+    width: 250px;
+    height: 25px;
+    margin-left: 10px;
+}
+
+button{
+    margin-top: 9px;
+    width: 140px;
+    height: 30px;
+    margin-left: 200px;
 }
