@@ -10,19 +10,27 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
+    <div class="title">Budget Tracker</div>
     <form>
         <div class="form-list">
-        <input type="name" class="control-A" id="type" placeholder="Type an item">
-        <input type="number" class="control-B" id="amount" placeholder="Amount">
+        <input type="name" class="control-A" id="typeSt" placeholder="Type an item">
+        <input type="number" class="control-B" id="amountSt" placeholder="Amount">
     </div>
 
     <div class="button">
-        <button>Add Expense</button>
+        <button class="incomeBtn" onclick="incomeSt">Add Income</button>
+        <button class="expenseBtn" onclick="expenseSt">Add Expense</button>
     </div>
 </form>
 
+<div class="display">
+    <h3>Balance</h3><a id="balance">R1 000</a>
+    <h3>Income</h3><a id="income">R200</a>
+    <h3>Expense</h3><a id="expense">R5 000</a>
+</div>
+
 <div class="transcation">
-    <table class="table table-striped">
+    <table id="displayState" class="table table-striped">
         <thead>
           <tr>
             <th scope="col">#</th>
