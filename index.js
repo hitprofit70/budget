@@ -7,3 +7,7 @@ var state = {
     ]
 }
 
+var balanceSt = document.getElementById('balanceSt').value
+var balanceSt = document.getElementById('incomeSt').value
+var balanceSt = document.getElementById('expenseSt').value
+var balanceSt = document.getElementById('itemSt').value
