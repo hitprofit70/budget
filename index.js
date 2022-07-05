@@ -19,7 +19,7 @@ var itemSt = document.getElementById('itemSt')
 function browserState() {}
 browserState();
 
-
+// put varabile in function
 function addIncome() {
     console.log('htgh');
 }
