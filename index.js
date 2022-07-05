@@ -3,11 +3,23 @@ var state = {
     income: 0,
     expense: 0,
     item: [
-        {items: 'Salary', Type: 'Income', Amount: 'R7 000'}
+        {items: 'Salary', type: 'Income', amount: 'R7 000'},
+        {items: 'Bus fare', type: 'Expense', amount: 'R200'},
+        {items: 'Foods', type: 'Expense', amount: 'R1 000'}
     ]
 }
 
-var balanceSt = document.getElementById('balanceSt').value
-var balanceSt = document.getElementById('incomeSt').value
-var balanceSt = document.getElementById('expenseSt').value
-var balanceSt = document.getElementById('itemSt').value
+var balance = document.getElementById('balance')
+var income = document.getElementById('income')
+var expense = document.getElementById('expense')
+var itemSt = document.getElementById('itemSt')
+
+
+//run for browser
+function browserState() {}
+browserState();
+
+
+function addIncome() {
+    console.log('htgh');
+}

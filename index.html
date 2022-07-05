@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>budget tracker</title>
     <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
     <div class="title">Budget Tracker</div>
     <form>
         <div class="form-list">
-        <input type="name" class="control-A" id="typeSt" placeholder="Type an item">
-        <input type="number" class="control-B" id="amountSt" placeholder="Amount">
+        <input type="name" class="control-A" id="inputState" placeholder="Type an item">
+        <input type="number" class="control-B" id="amountState" placeholder="Amount">
     </div>
 
     <div class="button">
-        <button class="incomeBtn" onclick="incomeSt">Add Income</button>
-        <button class="expenseBtn" onclick="expenseSt">Add Expense</button>
+        <button class="incomeBtn" onclick="addIncome()">Add Income</button>
+        <button class="expenseBtn" onclick="addExpense()">Add Expense</button>
     </div>
 </form>
 
@@ -30,7 +30,7 @@
 </div>
 
 <div class="transcation">
-    <table id="displayState" class="table table-striped">
+    <table id="itemSt" class="table table-striped">
         <thead>
           <tr>
             <th scope="col">#</th>
@@ -61,7 +61,8 @@
         </tbody>
       </table>
 </div>
-    
-</body>
+
 <script src="./index.js"></script>
+
+</body>
 </html>
