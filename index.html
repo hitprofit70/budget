@@ -5,32 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>budget tracker</title>
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="./index.css">
 </head>
 <body>
     <div class="title">Budget Tracker</div>
-    <form>
+    <div class="form">
         <div class="form-list">
-        <input type="name" class="control-A" id="inputState" placeholder="Type an item">
-        <input type="number" class="control-B" id="amountState" placeholder="Amount">
+        <input type="text" class="control-A" id="input" placeholder="Type an item">
+        
+        <br><br>
+
+        <input type="number" class="control-B" id="amount" placeholder="Amount">
     </div>
            <br>
+
     <div class="button">
         <button class="incomeBtn" onclick="addIncome()">Add Income</button>
         <button class="expenseBtn" onclick="addExpense()">Add Expense</button>
     </div>
-</form>
+  </div>
            <br><br>
+           
 <div class="display">
-    <h3>Balance</h3><a id="balance">R1 000</a>
-    <h3 style="color: green;">Income</h3><a style="color: green;" id="income">R200</a>
-    <h3 style="color: red;">Expense</h3><a style="color: red;" id="expense">R5 000</a>
+    <h3>Balance</h3><a id="balanceTotal">R1000</a>
+    <h3 style="color: green;">Income</h3><a style="color: green;" id="incomeTotal">R200</a>
+    <h3 style="color: red;">Expense</h3><a style="color: red;" id="expenseTotal">R5 000</a>
 </div>
 
 <div class="transcation">
-    <table id="itemSt" class="table table-striped">
+    <table id="displayData" class="table table-striped">
         <thead>
           <tr>
             <th scope="col">#</th>
@@ -61,7 +66,7 @@
         </tbody>
       </table>
 </div>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 <script src="./index.js"></script>
 
 </body>

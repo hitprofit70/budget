@@ -1,25 +1,83 @@
-var state = {
-    balance: 0,
-    income: 0,
-    expense: 0,
-    item: [
-        {items: 'Salary', type: 'Income', amount: 'R7 000'},
-        {items: 'Bus fare', type: 'Expense', amount: 'R200'},
-        {items: 'Foods', type: 'Expense', amount: 'R1 000'}
-    ]
+var balance = 0;
+var income = 0;
+var expense = 0;
+var tableData;
+var inputName;
+var amountMoney;
+var item = [];
+
+
+function clearnameInput() {
+    document.getElementById('input').value = '';
+    document.getElementById('amount').value = '';
 }
 
-var balance = document.getElementById('balance')
-var income = document.getElementById('income')
-var expense = document.getElementById('expense')
-var itemSt = document.getElementById('itemSt')
+function inputState() {
+    inputName = document.getElementById('input').value;
+    amountMoney = document.getElementById('amount').value;
+}
 
+function approvalonScreen(value) {
+    if (!value) {
+        return false;
+    }
+    return true;
+} 
 
-//run for browser
-function browserState() {}
-browserState();
-
-// put varabile in function
 function addIncome() {
-    console.log('htgh');
+    inputState();
+
+    if (approvalonScreen(inputName) && approvalonScreen(amountMoney)) {
+        item.push({
+            items: inputName,
+            Type: 'Income',
+            amount: amountMoney,
+        });
+        clearnameInput();
+        
+    } else {
+        alert('Please fill in the empty');
+    }
+    
+    displayScreen();
+
 }
+
+function addExpense() {
+    inputState();
+
+    if (approvalonScreen(inputName) && approvalonScreen(amountMoney)) {
+        item.push({
+            items: inputName,
+            Type: 'Expense',
+            amount: amountMoney,
+        });
+        clearnameInput();
+        
+    } else {
+        alert('Please fill in the empty');
+    }
+    
+    displayScreen();
+
+}
+
+// display on screen
+function displayScreen() {
+    var balanceTotal = document.getElementById('balanceTotal');
+    var incomeTotal = document.getElementById('incomeTotal');
+    var expenseTotal = document.getElementById('expenseTotal');
+    displayData = document.getElementById('displayData');
+
+
+
+
+
+    balanceTotal.innerHTML = `R${balance}`;
+    incomeTotal.innerHTML = `R${income}`;
+    expenseTotal.innerHTML = `R${expense}`;
+}
+
+displayScreen();
+
+
