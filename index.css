@@ -1,44 +1,66 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
 body {
+    background: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.appBox {
+    margin-top: 10px;
     background: gainsboro;
+    width: 600px;
+    height: 700px;
+    border-radius: 10px;
 }
 
 .control-A {
     width: 250px;
     height: 25px;
-    margin-left: 20px;
     margin-top: 15px;
     border: none;
+    margin-right: auto;
+    padding: 4px;
+    border-radius: 3px;
+    outline: none;
 }
 
 .control-B{
     width: 250px;
     height: 25px;
-    margin-left: 20px;
     border: none;
+    padding: 4px;
+    border-radius: 3px;
+    outline: none;
 }
 
 .incomeBtn{
     margin-top: 9px;
     width: 140px;
     height: 30px;
-    margin-left: 120px;
     font-weight: bold;
     background-color: green;
     box-shadow: 1px 1px 1px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .expenseBtn{
     margin-top: 9px;
     width: 140px;
     height: 30px;
-    margin-left: 30px;
     font-weight: bold;
     background-color: red;
     box-shadow: 1px 1px 1px;
 }
 
 .table{
-    margin-left: 20px;
     margin-top: 50px;
     width: 550px;
     height: 200px;
@@ -58,21 +80,21 @@ body {
 .title{
     font-weight: bold;
     font-size: 30px;
-    margin-left: 390px;
-}
-
-.form{
-    margin-left: 200px;
 }
 
 .display{
     display: flex;
     text-align: center;
-    margin-left: 200px;
+    margin-left: auto;
+    margin-right: auto;
     border: solid slategrey;
     width: 550px;
 }
 
 .transcation{
-    margin-left: 200px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
 }
