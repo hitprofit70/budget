@@ -41,7 +41,6 @@ function addIncome() {
     }
     
     displayScreen();
-
 }
 
 function addExpense() {
@@ -61,7 +60,6 @@ function addExpense() {
     }
     
     displayScreen();
-
 }
 
 function calculate() {
@@ -100,24 +98,23 @@ function displayScreen() {
   </table>`
 
   for (let i = 0; i < items.length; i++) {
-    displayData.innerHTML += `<table>
+    displayData.innerHTML += `
     <tbody>
     <tr>
       <th>${items[i]}.#</th>
       <td>${items[i]}.item</td>
       <td>${items[i]}.type</td>
-      <td>${items[i]}.amount</td>
+      <td>R${items[i]}.amount</td>
     </tr>
   </tbody>
-  </table>`;
+  `;
     
   }
 
     balanceTotal.innerHTML = `R${balance}`;
     incomeTotal.innerHTML = `R${income}`;
     expenseTotal.innerHTML = `R${expense}`;
-}
-
+} 
 displayScreen();
 
 

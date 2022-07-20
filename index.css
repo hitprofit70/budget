@@ -16,7 +16,7 @@ body {
     margin-top: 10px;
     background: gainsboro;
     width: 600px;
-    height: 700px;
+    height: 780px;
     border-radius: 10px;
 }
 
@@ -63,8 +63,9 @@ body {
 .table{
     margin-top: 50px;
     width: 550px;
-    height: 200px;
+    height: 320px;
     border: solid slategray;
+    overflow: scroll;
 }
 
 .display h3{
@@ -97,4 +98,25 @@ body {
     margin-right: auto;
     align-items: center;
     justify-content: center;
+}
+
+.clearbutton button{
+    margin-top: 15px;
+    width: 190px;
+    height: 45px;
+    background: blue;
+    color: aliceblue;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 15px;
+    border: none;
+    float: right;
+    margin-right: 30px;
+}
+
+.clearbutton button:hover{
+    transform: scale(1.1);
+    transition: 0s;
+    background: white;
+    color: black;
 }
