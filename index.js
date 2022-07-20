@@ -6,6 +6,17 @@ var amountMoney;
 var displayData;
 var items = [];
 
+function clearAlldata() {
+    if (items.length == 0) {
+        alert('Please fill in the empty');
+        return;
+    }
+    if (window.confirm('Clear all your transaction?')) {
+        items = [];
+        calculate();
+        displayScreen();
+    }
+}
 
 function clearnameInput() {
     document.getElementById('input').value = '';
