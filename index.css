@@ -16,13 +16,13 @@ body {
     margin-top: 10px;
     background: gainsboro;
     width: 600px;
-    height: 780px;
+    height: 800px;
     border-radius: 10px;
 }
 
 .control-A {
-    width: 250px;
-    height: 25px;
+    width: 300px;
+    height: 27px;
     margin-top: 15px;
     border: none;
     margin-right: auto;
@@ -32,8 +32,8 @@ body {
 }
 
 .control-B{
-    width: 250px;
-    height: 25px;
+    width: 300px;
+    height: 27px;
     border: none;
     padding: 4px;
     border-radius: 3px;
@@ -45,10 +45,11 @@ body {
     width: 140px;
     height: 30px;
     font-weight: bold;
-    background-color: green;
+    background-color: rgb(65, 237, 65);
     box-shadow: 1px 1px 1px;
     margin-right: auto;
     margin-left: auto;
+    border: none;
 }
 
 .expenseBtn{
@@ -58,14 +59,24 @@ body {
     font-weight: bold;
     background-color: red;
     box-shadow: 1px 1px 1px;
+    border: none;
+}
+
+.expenseBtn:hover{
+    transform: scale(1.1);
+    transition: 0s;
+}
+
+.incomeBtn:hover{
+    transform: scale(1.1);
+    transition: 0s;
 }
 
 .table{
-    margin-top: 50px;
+    margin-top: 1px;
     width: 550px;
-    height: 320px;
+    height: 300px;
     border: solid slategray;
-    overflow: scroll;
 }
 
 .display h3{
@@ -119,4 +130,8 @@ body {
     transition: 0s;
     background: white;
     color: black;
+}
+
+#displayData{
+    overflow-y: scroll;
 }
