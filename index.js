@@ -40,8 +40,9 @@ function addIncome() {
 
     if (approvalonScreen(inputName) && approvalonScreen(amountMoney)) {
         items.push({
+            no: items.length + 1,
             item: inputName,
-            Type: 'Income',
+            type: 'Income',
             amount: amountMoney,
         });
         clearnameInput();
@@ -59,8 +60,9 @@ function addExpense() {
 
     if (approvalonScreen(inputName) && approvalonScreen(amountMoney)) {
         items.push({
+            no: items.length + 1,
             item: inputName,
-            Type: 'Expense',
+            type: 'Expense',
             amount: amountMoney,
         });
         clearnameInput();
@@ -92,6 +94,10 @@ function calculate() {
 
 // display on screen
 function displayScreen() {
+
+    balance = 0;
+    income = 0;
+    expense = 0;
     var balanceTotal = document.getElementById('balanceTotal');
     var incomeTotal = document.getElementById('incomeTotal');
     var expenseTotal = document.getElementById('expenseTotal');
@@ -100,7 +106,7 @@ function displayScreen() {
     displayData.innerHTML = `<table>
     <thead>
       <tr>
-        <th>#</th>
+        <th>No</th>
         <th>Item</th>
         <th>Type</th>
         <th>Amount</th>
@@ -112,10 +118,10 @@ function displayScreen() {
     displayData.innerHTML += `
     <tbody>
     <tr>
-      <th>${items[i]}.#</th>
-      <td>${items[i]}.item</td>
-      <td>${items[i]}.type</td>
-      <td>R${items[i]}.amount</td>
+      <th>${items[i].no}</th>
+      <td>${items[i].item}</td>
+      <td>${items[i].type}</td>
+      <td>R${items[i].amount}</td>
     </tr>
   </tbody>
   `;
