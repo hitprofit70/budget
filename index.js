@@ -1,4 +1,4 @@
-var balance = 50;
+var balance = 0;
 var income = 0;
 var expense = 0;
 var inputName;
@@ -95,35 +95,29 @@ function calculate() {
 // display on screen
 function displayScreen() {
 
-    balance = 0;
-    income = 0;
-    expense = 0;
     var balanceTotal = document.getElementById('balanceTotal');
     var incomeTotal = document.getElementById('incomeTotal');
     var expenseTotal = document.getElementById('expenseTotal');
     displayData = document.getElementById('displayData');
 
     displayData.innerHTML = `<table>
-    <thead>
       <tr>
         <th>No</th>
         <th>Item</th>
         <th>Type</th>
         <th>Amount</th>
       </tr>
-    </thead>
   </table>`
 
   for (let i = 0; i < items.length; i++) {
-    displayData.innerHTML += `
-    <tbody>
+    displayData.innerHTML += `<table>
     <tr>
       <th>${items[i].no}</th>
       <td>${items[i].item}</td>
       <td>${items[i].type}</td>
       <td>R${items[i].amount}</td>
     </tr>
-  </tbody>
+    </table>
   `;
     
   }

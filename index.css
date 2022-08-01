@@ -45,7 +45,7 @@ body {
     width: 140px;
     height: 30px;
     font-weight: bold;
-    background-color: rgb(65, 237, 65);
+    background-color: rgb(72, 232, 72);
     box-shadow: 1px 1px 1px;
     margin-right: auto;
     margin-left: auto;
@@ -75,12 +75,16 @@ body {
 .table{
     margin-top: 1px;
     width: 550px;
-    height: 300px;
 }
 
-table, thead, tr, th, tbody, td{
-border: 1px;
+table, thead, tr, tbody, td{
+border: solid 3px;
+text-align: left;
+background-color: whitesmoke;
+margin-left: auto;
+margin-right: auto;
 }
+
 
 .display h3{
     margin-left: 20px;
@@ -102,8 +106,9 @@ border: 1px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    border: solid slategrey;
+    border: solid 4px black;
     width: 550px;
+    padding: 3px;
 }
 
 .transcation{
@@ -135,6 +140,7 @@ border: 1px;
     color: black;
 }
 
-#displayData{
+.tableData{
+    height: 300px;
     overflow-y: scroll;
 }
