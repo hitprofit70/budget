@@ -20,6 +20,13 @@ body {
     border-radius: 10px;
 }
 
+#incomeTotal {
+    color: green;
+}
+
+#expenseTotal {
+    color: red;
+}
 .control-A {
     width: 300px;
     height: 27px;
